@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aringe</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+const API_URL = "http://127.0.0.1:5000/chat";
+</script>
+
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo-area">
+            <div class="logo-circle"></div>
+            <div>
+                <h1>Aringe</h1>
+                <p>Sistema Inteligente</p>
+            </div>
+        </div>
+
+        <div class="mode-card">
+            <span class="mode-dot" id="modeDot"></span>
+            <div>
+                <h2 id="modeTitle">Modo Normal</h2>
+                <p id="modeText">Educado e inteligente</p>
+            </div>
+        </div>
+
+        <button class="mode-button" id="workModeBtn">
+            Ativar Aringe Trabalho
+        </button>
+
+        <div class="system-info">
+            <h3>Status</h3>
+            <div class="info-line"><span>Sistema</span><strong>Online</strong></div>
+            <div class="info-line"><span>Resposta</span><strong>IA Real</strong></div>
+            <div class="info-line"><span>Versão</span><strong>1.0</strong></div>
+        </div>
+
+    </aside>
+
+    <main class="chat-container">
+
+        <div class="topbar">
+            <div>
+                <h2>Aringe</h2>
+                <p>Como posso ajudar?</p>
+            </div>
+
+            <div class="online-box">
+                <span class="online-dot"></span>
+                Online
+            </div>
+        </div>
+
+        <div class="chat-box" id="chatBox"></div>
+
+        <div class="input-area">
+            <input id="userInput" placeholder="Digite algo..." />
+            <button id="sendButton">Enviar</button>
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
